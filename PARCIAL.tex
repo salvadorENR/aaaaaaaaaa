@@ -6,4 +6,284 @@
 
 \begin{Schunk}
 \begin{Sinput}
-> A <-Matriz(c(1,2,3,2,1,4),nrow=2,ncol=3)
+> #CAREN ESTEFANI CALDERÓN
+> 
+> #PROBLEMA1
+> #Las ventajas de utilizar R son  la estabilidad y lo más importante que es gratuito, es una herramienta para #hacer análisis estadístico, gráficas o reportes.
+> #fire safety es 3.2.2, es la que se está utilizando actualmente
+> #la lógica es que el número cada cierto tiempo cambia, el número del centro disminuye, mientras que el tercero  aumenta.
+> 
+> #PROBLEMA2
+> A <- matrix(c(1, 2, 2, 1, 3, 4), nrow=2, ncol=3); A
+\end{Sinput}
+\begin{Soutput}
+     [,1] [,2] [,3]
+[1,]    1    2    3
+[2,]    2    1    4
+\end{Soutput}
+\begin{Sinput}
+> B <- matrix(c(1, 2, 3, 0, 1, 2), nrow=3, ncol=2);B
+\end{Sinput}
+\begin{Soutput}
+     [,1] [,2]
+[1,]    1    0
+[2,]    2    1
+[3,]    3    2
+\end{Soutput}
+\begin{Sinput}
+> c <- matrix(c(3,4,2,-1,1,1,3,5,3), nrow=3, ncol=3);c
+\end{Sinput}
+\begin{Soutput}
+     [,1] [,2] [,3]
+[1,]    3   -1    3
+[2,]    4    1    5
+[3,]    2    1    3
+\end{Soutput}
+\begin{Sinput}
+> D <- matrix(c(3, 2, -2, 4), nrow=2, ncol=2);D
+\end{Sinput}
+\begin{Soutput}
+     [,1] [,2]
+[1,]    3   -2
+[2,]    2    4
+\end{Soutput}
+\begin{Sinput}
+> E <- matrix(c(2,0,3,-4,1,2,5,4,1), nrow=3, ncol=3);E
+\end{Sinput}
+\begin{Soutput}
+     [,1] [,2] [,3]
+[1,]    2   -4    5
+[2,]    0    1    4
+[3,]    3    2    1
+\end{Soutput}
+\begin{Sinput}
+> F <- matrix(c(-4, 2, 5, 3), nrow=2, ncol=2);F
+\end{Sinput}
+\begin{Soutput}
+     [,1] [,2]
+[1,]   -4    5
+[2,]    2    3
+\end{Soutput}
+\begin{Sinput}
+> O <- matrix(c(0,0,0,0,0,0,0,0,0),nrow=3, ncol=3)
+> O
+\end{Sinput}
+\begin{Soutput}
+     [,1] [,2] [,3]
+[1,]    0    0    0
+[2,]    0    0    0
+[3,]    0    0    0
+\end{Soutput}
+\begin{Sinput}
+> c <- matrix(c(3,4,2,-1,1,1,3,5,3), nrow=3, ncol=3)
+> E <- matrix(c(2,0,3,-4,1,2,5,4,1), nrow=3, ncol=3)
+> c+E
+\end{Sinput}
+\begin{Soutput}
+     [,1] [,2] [,3]
+[1,]    5   -5    8
+[2,]    4    2    9
+[3,]    5    3    4
+\end{Soutput}
+\begin{Sinput}
+> E+c
+\end{Sinput}
+\begin{Soutput}
+     [,1] [,2] [,3]
+[1,]    5   -5    8
+[2,]    4    2    9
+[3,]    5    3    4
+\end{Soutput}
+\begin{Sinput}
+> D-F
+\end{Sinput}
+\begin{Soutput}
+     [,1] [,2]
+[1,]    7   -7
+[2,]    0    1
+\end{Soutput}
+\begin{Sinput}
+> -3*c
+\end{Sinput}
+\begin{Soutput}
+     [,1] [,2] [,3]
+[1,]   -9    3   -9
+[2,]  -12   -3  -15
+[3,]   -6   -3   -9
+\end{Soutput}
+\begin{Sinput}
+> 5*O
+\end{Sinput}
+\begin{Soutput}
+     [,1] [,2] [,3]
+[1,]    0    0    0
+[2,]    0    0    0
+[3,]    0    0    0
+\end{Soutput}
+\begin{Sinput}
+> 2*c
+\end{Sinput}
+\begin{Soutput}
+     [,1] [,2] [,3]
+[1,]    6   -2    6
+[2,]    8    2   10
+[3,]    4    2    6
+\end{Soutput}
+\begin{Sinput}
+> 3*E
+\end{Sinput}
+\begin{Soutput}
+     [,1] [,2] [,3]
+[1,]    6  -12   15
+[2,]    0    3   12
+[3,]    9    6    3
+\end{Soutput}
+\begin{Sinput}
+> 2*B
+\end{Sinput}
+\begin{Soutput}
+     [,1] [,2]
+[1,]    2    0
+[2,]    4    2
+[3,]    6    4
+\end{Soutput}
+\begin{Sinput}
+> #PROBLEMA3
+> A <- matrix(c(2,3,4,3,2,1,4,2,6,3,5,4), nrow=3, ncol=4); A
+\end{Sinput}
+\begin{Soutput}
+     [,1] [,2] [,3] [,4]
+[1,]    2    3    4    3
+[2,]    3    2    2    5
+[3,]    4    1    6    4
+\end{Soutput}
+\begin{Sinput}
+> B <- matrix(c(20,28,30,40,12,15,12,16,8,15,10,20), nrow=4, ncol=3); B
+\end{Sinput}
+\begin{Soutput}
+     [,1] [,2] [,3]
+[1,]   20   12    8
+[2,]   28   15   15
+[3,]   30   12   10
+[4,]   40   16   20
+\end{Soutput}
+\begin{Sinput}
+> A <- matrix(c(2,3,4,3,2,1,4,2,6,3,5,4), nrow=3, ncol=4)
+> B <- matrix(c(20,28,30,40,12,15,12,16,8,15,10,20), nrow=4, ncol=3)
+>              P<-A %*%B;P
+\end{Sinput}
+\begin{Soutput}
+     [,1] [,2] [,3]
+[1,]  364  165  161
+[2,]  376  170  174
+[3,]  448  199  187
+\end{Soutput}
+\begin{Sinput}
+> #PROBLEMA5
+>              url<-"http://www.jaredlander.com/data/Tomato%20First.csv"
+> baseweb<-read.table(file=url,header=TRUE,sep=",")
+> baseweb
+\end{Sinput}
+\begin{Soutput}
+   Round                   Tomato Price           Source Sweet Acid Color
+1      1               Simpson SM  3.99      Whole Foods   2.8  2.8   3.7
+2      1        Tuttorosso (blue)  2.99          Pioneer   3.3  2.8   3.4
+3      1       Tuttorosso (green)  0.99          Pioneer   2.8  2.6   3.3
+4      1           La Fede SM DOP  3.99        Shop Rite   2.6  2.8   3.0
+5      2             Cento SM DOP  5.49       D Agostino   3.3  3.1   2.9
+6      2            Cento Organic  4.99       D Agostino   3.2  2.9   2.9
+7      2              La Valle SM  3.99        Shop Rite   2.6  2.8   3.6
+8      2          La Valle SM DOP  3.99           Faicos   2.1  2.7   3.1
+9      3   Stanislaus Alta Cucina  4.53 Restaurant Depot   3.4  3.3   4.1
+10     3                     Ciao    NA            Other   2.6  2.9   3.4
+11     3       Scotts Backyard SM  0.00       Home Grown   1.6  2.9   3.1
+12     3 Di Casa Barone (organic) 12.80           Eataly   1.7  3.6   3.8
+13     4         Trader Joes Plum  1.49      Trader Joes   3.4  3.3   4.0
+14     4          365 Whole Foods  1.49      Whole Foods   2.8  2.7   3.4
+15     4        Muir Glen Organic  3.19      Whole Foods   2.9  2.8   2.7
+16     4        Bionature Organic  3.39      Whole Foods   2.4  3.3   3.4
+   Texture Overall Avg.of.Totals Total.of.Avg
+1      3.4     3.4          16.1         16.1
+2      3.0     2.9          15.3         15.3
+3      2.8     2.9          14.3         14.3
+4      2.3     2.8          13.4         13.4
+5      2.8     3.1          14.4         15.2
+6      3.1     2.9          15.5         15.1
+7      3.4     2.6          14.7         14.9
+8      2.4     2.2          12.6         12.5
+9      3.2     3.7          17.8         17.7
+10     3.3     2.9          15.3         15.2
+11     2.4     1.9          11.9         11.9
+12     2.3     1.4          12.7         12.7
+13     3.6     3.9          17.8         18.2
+14     3.1     3.1          14.8         15.2
+15     3.2     3.1          14.8         14.7
+16     3.2     2.8          15.1         15.2
+\end{Soutput}
+\begin{Sinput}
+> #PROBLEMA6
+> baseweb[["sweet"]]
+\end{Sinput}
+\begin{Soutput}
+NULL
+\end{Soutput}
+\begin{Sinput}
+> baseweb
+\end{Sinput}
+\begin{Soutput}
+   Round                   Tomato Price           Source Sweet Acid Color
+1      1               Simpson SM  3.99      Whole Foods   2.8  2.8   3.7
+2      1        Tuttorosso (blue)  2.99          Pioneer   3.3  2.8   3.4
+3      1       Tuttorosso (green)  0.99          Pioneer   2.8  2.6   3.3
+4      1           La Fede SM DOP  3.99        Shop Rite   2.6  2.8   3.0
+5      2             Cento SM DOP  5.49       D Agostino   3.3  3.1   2.9
+6      2            Cento Organic  4.99       D Agostino   3.2  2.9   2.9
+7      2              La Valle SM  3.99        Shop Rite   2.6  2.8   3.6
+8      2          La Valle SM DOP  3.99           Faicos   2.1  2.7   3.1
+9      3   Stanislaus Alta Cucina  4.53 Restaurant Depot   3.4  3.3   4.1
+10     3                     Ciao    NA            Other   2.6  2.9   3.4
+11     3       Scotts Backyard SM  0.00       Home Grown   1.6  2.9   3.1
+12     3 Di Casa Barone (organic) 12.80           Eataly   1.7  3.6   3.8
+13     4         Trader Joes Plum  1.49      Trader Joes   3.4  3.3   4.0
+14     4          365 Whole Foods  1.49      Whole Foods   2.8  2.7   3.4
+15     4        Muir Glen Organic  3.19      Whole Foods   2.9  2.8   2.7
+16     4        Bionature Organic  3.39      Whole Foods   2.4  3.3   3.4
+   Texture Overall Avg.of.Totals Total.of.Avg
+1      3.4     3.4          16.1         16.1
+2      3.0     2.9          15.3         15.3
+3      2.8     2.9          14.3         14.3
+4      2.3     2.8          13.4         13.4
+5      2.8     3.1          14.4         15.2
+6      3.1     2.9          15.5         15.1
+7      3.4     2.6          14.7         14.9
+8      2.4     2.2          12.6         12.5
+9      3.2     3.7          17.8         17.7
+10     3.3     2.9          15.3         15.2
+11     2.4     1.9          11.9         11.9
+12     2.3     1.4          12.7         12.7
+13     3.6     3.9          17.8         18.2
+14     3.1     3.1          14.8         15.2
+15     3.2     3.1          14.8         14.7
+16     3.2     2.8          15.1         15.2
+\end{Soutput}
+\begin{Sinput}
+> lista1<-list(var1="Tomato",var2="Sweet",var3="Acid",var4="Texture")
+> lista1
+\end{Sinput}
+\begin{Soutput}
+$var1
+[1] "Tomato"
+
+$var2
+[1] "Sweet"
+
+$var3
+[1] "Acid"
+
+$var4
+[1] "Texture"
+\end{Soutput}
+\begin{Sinput}
+> #PROBLEMA7
+> library(foreign)
+> Baseimportante<-spss.get("empresas.sav",use.value.labels =TRUE)
