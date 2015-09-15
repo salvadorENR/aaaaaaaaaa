@@ -51,7 +51,7 @@ lista1<-list(var1="Tomato",var2="Sweet",var3="Acid",var4="Texture")
 lista1
 
 #PROBLEMA7
-library(foreign)
+library(Hmisc)
 Baseimportante<-spss.get("empresas.sav",use.value.labels =TRUE)
 Baseimportante
 lista2<-list(AGR="Agricultura",CEN="Centrales de energía",BAN="Bancos",TC="Transporte y Comunicaciones")
