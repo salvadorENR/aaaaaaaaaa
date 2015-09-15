@@ -1,0 +1,76 @@
+\documentclass{article}
+
+\begin{document}
+\SweaveOpts{concordance=TRUE}
+
+<<>>=
+#CAREN ESTEFANI CALDERÓN
+
+#PROBLEMA1
+#Las ventajas de utilizar R son  la estabilidad y lo más importante que es gratuito, es una herramienta para hacer análisis estadístico, gráficas o reportes.
+#fire safety es 3.2.2, es la que se está utilizando actualmente
+#la lógica es que el número cada cierto tiempo cambia, el número del centro disminuye, mientras que el tercero cambia o aumenta.
+
+#PROBLEMA2
+A <- matrix(c(1, 2, 2, 1,3,4), nrow=2, ncol=3); A
+B <- matrix(c(1, 2, 3, 0, 1, 2), nrow=3, ncol=2);B
+c <- matrix(c(3,4,2,-1,1,1,3,5,3), nrow=3, ncol=3);c
+D <- matrix(c(3, 2, -2, 4), nrow=2, ncol=2);D
+E <- matrix(c(2,0,3,-4,1,2,5,4,1), nrow=3, ncol=3);E
+F <- matrix(c(-4, 2, 5, 3), nrow=2, ncol=2);F
+O <- matrix(c(0,0,0,0,0,0,0,0,0),nrow=3, ncol=3)
+O
+c <- matrix(c(3,4,2,-1,1,1,3,5,3), nrow=3, ncol=3)
+E <- matrix(c(2,0,3,-4,1,2,5,4,1), nrow=3, ncol=3)
+c+E
+E+c
+D-F
+-3*c
+
+
+#PROBLEMA3
+A <- matrix(c(2,3,4,3,2,1,4,2,6,3,5,4), nrow=3, ncol=4); A
+B <- matrix(c(20,28,30,40,12,15,12,16,8,15,10,20), nrow=4, ncol=3); B
+A <- matriz(c(2,3,4,3,2,1,4,2,6,3,5,4), nrow=3, ncol=4)
+B <- matrix(c(20,28,30,40,12,15,12,16,8,15,10,20), nrow=4, ncol=3)
+             P<-A %*%B;P
+             
+#PROBLEMA5
+             url<-"http://www.jaredlander.com/data/Tomato%20First.csv"
+baseweb<-read.table(file=url,header=TRUE,sep=",")
+baseweb
+
+#PROBLEMA6
+baseweb[["sweet"]]
+baseweb
+lista1<-list(var1="Tomato",var2="Sweet",var3="Acid",var4="Texture")
+lista1
+
+#PROBLEMA7
+Baseimportante<-spss.get("empresas.sav",use.value.labels =TRUE)
+Baseimportante
+lista2<-list(AGR="Agricultura",CEN="Centrales de energía",BAN="Bancos",TC="Transporte y Comunicaciones")
+lista2
+
+#PROBLEMA8
+base<-read.table("coches.csv",header=TRUE,sep = ",")    
+base
+
+#problema4
+library(XML)
+url <- "http://www.jaredlander.com/2012/02/another-kind-of-super-bowl-pool/" 
+prueba <- readHTMLTable(url, which = 1, stringsAsFactors = FALSE)
+prueba
+
+#PROBLEMA10
+#serie3 es el nombre de txt que realicé
+ejemplo<-read.table("serie3.txt", header=T);
+ejemplo
+
+
+
+@
+
+
+
+\end{document}

@@ -1,0 +1,16 @@
+\documentclass{article}
+
+\begin{document}
+\SweaveOpts{concordance=TRUE}
+
+<<>>=
+A <- matrix(c(2,3,4,3,2,1,4,2,6,3,5,4), nrow=3, ncol=4); A
+B <- matrix(c(20,28,30,40,12,15,12,16,8,15,10,20), nrow=4, ncol=3); B
+A <- matriz(c(2,3,4,3,2,1,4,2,6,3,5,4), nrow=3, ncol=4)
+B <- matrix(c(20,28,30,40,12,15,12,16,8,15,10,20), nrow=4, ncol=3)
+             P<-A %*%B;P
+@
+
+
+
+\end{document}
